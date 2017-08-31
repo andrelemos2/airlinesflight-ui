@@ -8,10 +8,10 @@ angular.module('airlines-flights', ['aereoDiretivas', 'ngRoute', 'ngResource'])
             controller: 'AereoController'
         });
 
-        // $routeProvider.when('/aereos/info', {
-        //     templateUrl: '<html><body><h1>Andre</h1></body></html>',
-        //     controller: 'AereoController'
-        // });
+        $routeProvider.when('/aereos/info/:codigo', {
+            templateUrl: 'partials/info.html',
+            controller: 'InfoController'
+        });
 
         $routeProvider.otherwise({redirectTo: '/aereos'});
 
