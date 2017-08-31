@@ -1,0 +1,56 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt=" Airlines Flight Info" class="fa fa-plane">
+            </a>
+        </div>
+    </div>
+</nav>
+
+<form class="form-inline" ng-submit="pesquisar()">
+    <div class="form-group">
+        <label>Origem</label>
+        <input type="text" class="form-control" id="origemId" placeholder="Origem" ng-model="origem">
+    </div>
+    <div class="form-group">
+        <label>Destino</label>
+        <input type="text" class="form-control" id="destinoId" placeholder="Destino" ng-model="destino">
+    </div>
+</form>
+
+<div class="panel-heading"></div>
+
+<div class="table-responsive">
+    <table id="example" class="table table-hover table-striped" cellspacing="0" width="100%">
+        <thead>
+        <tr>
+            <th>cia</th>
+            <th>voo</th>
+            <th>saída</th>
+            <th>chega</th>
+            <th>origem</th>
+            <th>destino</th>
+            <th>status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="aereo in aereos | filter: origem | filter: destino">
+            <td>{{aereo.companhiaAerea}}</td>
+            <td>{{aereo.segmento.voo}}</td>
+            <td>{{aereo.segmento.dataPartida}}</td>
+            <td>{{aereo.segmento.dataChegada}}</td>
+            <td>{{aereo.segmento.origem}}</td>
+            <td>{{aereo.segmento.destino}}</td>
+            <td>{{aereo.segmento.status}}</td>
+            <td>
+                <a href="/aereos/info" class="btn btn-info" type="button">Info</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+</div>
+
