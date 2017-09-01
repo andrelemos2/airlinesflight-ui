@@ -13,14 +13,14 @@ Link App
 https://airlinesflights-ui.herokuapp.com
 
 
-Pré-requisito
-==========================
-O serviço está sendo consumido da api na porta padrão do servidor tomcat 8080.
-
 Construindo na sua máquina
 ==========================
 npm install
+
 npm start
+
+## Pré-requisito
+O serviço está sendo consumido da api na porta padrão do servidor tomcat 8080.
 
 
 Técnologias utilizadas
