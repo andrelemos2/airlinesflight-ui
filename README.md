@@ -19,8 +19,8 @@ npm install
 
 npm start
 
-## Pré-requisito
-O serviço está sendo consumido da api na porta padrão do servidor tomcat 8080.
+## Observação
+O serviço está sendo consumido da api de produção `https://airlinesflights-api.herokuapp.com/aereos`.
 
 
 Técnologias utilizadas
