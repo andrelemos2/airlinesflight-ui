@@ -26,4 +26,5 @@ O serviço está sendo consumido da api na porta padrão do servidor tomcat 8080
 Técnologias utilizadas
 ==========================
 
-- AngularJS (https://angularjs.org/)
+- AngularJS (https://angularjs.org)
+- Bootstrap 3 (http://getbootstrap.com)
