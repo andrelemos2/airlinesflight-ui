@@ -1,11 +1,7 @@
 var express = require('express');
 var app = express();
 app.use(express.static(__dirname + '/public')); //aqui você define onde está o index.html da sua aplicação.
-app.listen(process.env.PORT || 3000);
-//
-// var http = require('http')
-//     ,app = require('./config/express')
-//     db = require('./config/database');
-//
-// http.createServer(app).listen(3000);
+app.listen(process.env.PORT || 3000, function () {
+    console.log('Servidor escutando na porta: ' + this.address().port);
+});
 
