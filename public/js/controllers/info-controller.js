@@ -4,7 +4,7 @@ angular.module('airlines-flights')
         $scope.info = {};
         $scope.mensagem = '';
 
-        var recursoAereo = $resource('http://localhost:8080/aereos/:codigo');
+        var recursoAereo = $resource('https://airlinesflights-api.herokuapp.com/aereos/:codigo');
 
         recursoAereo.get({codigo:$routeParams.codigo}, function (aereo) {
             $scope.info = aereo;

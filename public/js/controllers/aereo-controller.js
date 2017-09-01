@@ -1,6 +1,6 @@
 angular.module('airlines-flights').controller('AereoController', function($scope, $rootScope, $resource) {
     
-    var recursoAereo = $resource('http://localhost:8080/aereos');
+    var recursoAereo = $resource('https://airlinesflights-api.herokuapp.com/aereos');
     $scope.aereos = {};
     $rootScope.info = {
         aereos: {}
