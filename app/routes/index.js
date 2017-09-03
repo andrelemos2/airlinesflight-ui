@@ -7,7 +7,7 @@ module.exports  = function(app) {
         .post(api.adiciona)
         .get(api.lista);
 
-    app.route('/aereos/:codigoId')
+    app.route('/aereos/info/:codigo')
         .delete(api.remove)
         .get(api.busca)
         .put(api.atualiza);
