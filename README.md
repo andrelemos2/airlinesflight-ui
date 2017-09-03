@@ -10,7 +10,7 @@ https://github.com/andrelemos2/airlinesflights-ui.git
 Link App
 ==========================
 
-https://airlinesflights-ui.herokuapp.com
+https://airlinesflights-ui.herokuapp.com/aereos
 
 
 Construindo na sua máquina
