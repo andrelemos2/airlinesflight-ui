@@ -1,7 +1,27 @@
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title text-center">{{titulo}}</h3>
-    </div>
-    <div class="panel-body" ng-transclude>
-    </div>
-</div>
+<table class="table table-hover table-responsive">
+        <thead>
+            <tr>
+                <th>cia</th>
+                <th>voo</th>
+                <th>saída</th>
+                <th>chegada</th>
+                <th>origem</th>
+                <th>destino</th>
+                <th>status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="aereo in aereos | filter: origem | filter: destino">
+                <td>{{aereo.companhiaAerea}}</td>
+                <td>{{aereo.segmento.voo}}</td>
+                <td>{{aereo.segmento.dataPartida}}</td>
+                <td>{{aereo.segmento.dataChegada}}</td>
+                <td>{{aereo.segmento.origem}}</td>
+                <td>{{aereo.segmento.destino}}</td>
+                <td>{{aereo.segmento.status}}</td>
+                <td>
+                    <a href="/aereos/info/{{aereo.codigo}}" class="btn btn-info" type="button">Info</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>

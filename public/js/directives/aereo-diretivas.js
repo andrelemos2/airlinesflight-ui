@@ -1,5 +1,5 @@
 angular.module('aereoDiretivas', [])
-.directive('aereoPainel', function() {
+.directive('minhaTabela', function() {
 
     var ddo = {};
 
